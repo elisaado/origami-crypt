@@ -12,8 +12,8 @@ function encrypt (text) {
 }
 
 function decrypt (text) {
-  var decipher = crypto.createDecipher(algorithm, password)
-  var dec = decipher.update(text,"hex", "utf8")
+  var decipher = crypto.createDecipher(algorithm, password);
+  var dec = decipher.update(text, "hex", "utf8");
   dec += decipher.final("utf8");
   return dec;
 }
